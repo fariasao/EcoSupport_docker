@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+      args:
+        PROFILE: prod
+    ports:
+      - "8080:8080"
+    environment:
+      - PROFILE=prod
+    volumes:
+      - app-data:/app/data
+    depends_on:
+      - oracledb
+
+  oracledb:
+    image: oracleinanutshell/oracle-xe-11g
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_HOME=/u01/app/oracle/product/11.2.0/xe
+      - ORACLE_SID=ORCL
+      - ORACLE_USER=RM97890
+      - ORACLE_PASSWORD=120899
+    volumes:
+      - db-data:/u01/app/oracle/oradata
+    ports:
+      - "1521:1521"
+
+volumes:
+  app-data:
+  db-data:
