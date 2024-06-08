@@ -26,6 +26,7 @@
 Primeiro, clone o repositório para o seu ambiente local:
 
 git clone https://github.com/fariasao/EcoSupport_docker.git
+    
     cd EcoSupport_docker
 
 Passo 2: Construir a Imagem Docker
@@ -38,7 +39,7 @@ Execute os contêineres em segundo plano:
 
     docker-compose up -d
 
-Passo 5: Parar os Contêineres
+Passo 4: Parar os Contêineres
 Para parar os contêineres, use o comando:
 
     docker-compose down
@@ -55,7 +56,6 @@ Aqui estão exemplos de como interagir com cada tipo de recurso:
     
     ```bash
     GET http://localhost:8080/usuarios
-    GET https://ecosupport-production.up.railway.app/usuarios
     
     ```
     
@@ -63,7 +63,6 @@ Aqui estão exemplos de como interagir com cada tipo de recurso:
     
     ```bash
     GET http://localhost:8080/usuarios/{id}
-    GET https://ecosupport-production.up.railway.app/usuarios/{id}
     
     ```
     
@@ -119,7 +118,6 @@ Aqui estão exemplos de como interagir com cada tipo de recurso:
     
     ```bash
     GET http://localhost:8080/empresas
-    GET https://ecosupport-production.up.railway.app/empresas
     
     ```
     
@@ -127,7 +125,6 @@ Aqui estão exemplos de como interagir com cada tipo de recurso:
     
     ```bash
     GET http://localhost:8080/empresas/{id}
-    GET https://ecosupport-production.up.railway.app/empresas/{id}
     
     ```
     
