@@ -229,6 +229,8 @@ Banco de Dados:\
 
 ## Link para vídeo de funcionamento do projeto
 
+[![Vídeo TPC](http://img.youtube.com/vi/f-ICr8gkzas/0.jpg)](https://www.youtube.com/watch?v=f-ICr8gkzas)
+
 
 ## Listagem de Endpoints
 ### Endpoints para Usuários:
